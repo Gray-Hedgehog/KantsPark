@@ -1,0 +1,119 @@
+@import "../variables.css";
+
+html {
+    box-sizing: border-box;
+}
+
+button, input {
+    box-sizing: border-box;
+}
+
+*:after, *:before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background: var(--kantspark-very-light-gray);
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+}
+
+input {
+    font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    background: var(--kantspark-light-gray);
+}
+
+.container {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+}
+
+.header-top__left {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4px 0 0;
+    width: 560px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header-top__left a {
+    color: var(--kantspark-black);
+}
+
+.header-top__left-location img {
+    align-self: center;
+    margin: 0 0 0 13px;
+    transform: translateY(2px);
+}
+
+.header-top__left-informations-shops {
+    margin: 0 24px 0 0; 
+}
+
+.header-top__left-informations-buyers {
+    position: relative;
+    margin: 0 44px 0 0; 
+}
+
+.header-top__left-informations-buyers::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    top: 50%;
+    right: -11px;
+    transform: translateY(-50%);
+    background-color: var(--kantspark-black);
+    -webkit-mask-image: url(../img/arrow.svg);
+    mask-image: url(../img/arrow.svg);
+}
+
+
+.header-top__left-informations-legal-entities {
+    position: relative;
+    margin: 0 24px 0 0; 
+}
+
+.header-top__left-informations-legal-entities::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    top: 50%;
+    right: -11px;
+    transform: translateY(-50%);
+    background-color: var(--kantspark-black);
+    -webkit-mask-image: url(../img/arrow.svg);
+    mask-image: url(../img/arrow.svg);
+}
+
+
+.header-top__right a{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--kantspark-gray);
+}
