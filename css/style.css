@@ -20,7 +20,6 @@ body {
     position: relative;
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    background: var(--kantspark-very-light-gray);
 }
 
 button {
@@ -37,9 +36,6 @@ input {
 }
 
 .container {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     margin: 0 auto;
     max-width: 1120px;
 }
@@ -66,7 +62,6 @@ input {
 
 .header-top__left-location img {
     align-self: center;
-    margin: 0 0 0 13px;
     transform: translateY(2px);
 }
 
@@ -117,3 +112,90 @@ input {
     font-weight: 400;
     color: var(--kantspark-gray);
 }
+
+.header-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 34px 0 0 0;
+    height: 48px;
+}
+
+.header-middle__logo {
+    margin: 0 46px 0 0;
+}
+
+.header-middle form{
+    display: flex;
+    margin: 0 56px 0 0;
+    width: 412px;
+    height: 48px;
+}
+
+.header-middle form input{
+    width: 356px;
+    height: 48px;
+    padding: 0 0 0 16px;
+    border: 1px solid #D5D5D5;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    outline:none;
+}
+
+.header-middle form input::placeholder{
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: var(--kantspark-black-input);
+}
+
+.header-middle form button{
+    border: 0;
+    border-radius: 0 3px 3px 0;
+    width: 56px;
+    height: 48px;
+    background: var(--kantspark-red);
+}
+
+.header-middle__link {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 13px 16px 15px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--kantspark-black);
+}
+
+.header-middle__link .icon-favorites{
+    margin: 0 15px 0 0;
+    height: 20px;
+    width: 24px;
+}
+
+.header-middle__link  .icon-compare {
+    margin: 0 12px 0 0;
+    height: 24px;
+    width: 27px;
+}
+
+.header-middle__link .icon-basket {
+    margin: 0 14px 0 0;
+    height: 21px;
+    width: 24px;
+}
+
+.header-middle__link-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0  0 0 15px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: var(--kantspark-red);
+    color: var(--kantspark-white);
+    font-size: 12px;
+}
+
