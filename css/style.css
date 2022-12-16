@@ -52,7 +52,7 @@ input {
     justify-content: space-between;
     margin: 0 4px 0 0;
     width: 560px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 }
 
@@ -62,6 +62,7 @@ input {
 
 .header-top__left-location img {
     align-self: center;
+    margin: 0 13px 0 0;
     transform: translateY(2px);
 }
 
@@ -106,9 +107,11 @@ input {
     mask-image: url(../img/arrow.svg);
 }
 
-
+.header-top__right {
+    margin: 0 16px 0 0;
+}
 .header-top__right a{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: var(--kantspark-gray);
 }
