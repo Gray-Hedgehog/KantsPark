@@ -166,9 +166,14 @@ input {
     align-items: center;
     height: 48px;
     padding: 13px 16px 15px 16px;
+    border-radius: 3px;
     font-weight: 600;
     font-size: 14px;
     color: var(--kantspark-black);
+}
+
+.header-middle__link:hover {
+    background: var(--kantspark-black-opacity);
 }
 
 .header-middle__link .icon-favorites{
