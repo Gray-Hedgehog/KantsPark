@@ -61,16 +61,22 @@ input {
 }
 
 .header-top__left-location img {
-    align-self: center;
+    align-items: center;
     margin: 0 13px 0 0;
     transform: translateY(2px);
 }
 
+.header-top__left-informations {
+    display: flex;
+    align-items: center;
+}
 .header-top__left-informations-shops {
+    flex: 0 0 auto;
     margin: 0 24px 0 0; 
 }
 
 .header-top__left-informations-buyers {
+    flex: 0 0 auto;
     position: relative;
     margin: 0 44px 0 0; 
 }
@@ -90,6 +96,7 @@ input {
 
 
 .header-top__left-informations-legal-entities {
+    flex: 0 0 auto;
     position: relative;
     margin: 0 24px 0 0; 
 }
@@ -108,6 +115,7 @@ input {
 }
 
 .header-top__right {
+    flex: 0 0 auto;
     margin: 0 16px 0 0;
 }
 .header-top__right a{
@@ -173,7 +181,7 @@ input {
 }
 
 .header-middle__link:hover {
-    background: var(--kantspark-black-opacity);
+    background: var(--kantspark-black-opacity-04);
 }
 
 .header-middle__link .icon-favorites{
@@ -206,4 +214,58 @@ input {
     color: var(--kantspark-white);
     font-size: 12px;
 }
+
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 28px 0 0 0;
+    height: 48px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--kantspark-black-opacity-02);
+}
+
+.header-bottom__link {
+    flex: 0 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 16px 21px 16px 16px;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--kantspark-black);
+}
+
+.header-bottom__link img {
+    margin: 0 8px 0 0;
+    transform: translateY(2px);
+}
+
+.header-bottom__line {
+    margin: 8px 0 8px 0;
+    height: 32px;
+    border: 1px solid var(--kantspark-black-opacity-04);
+}
+
+.header-bottom__link-catalog {  
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    background: var(--kantspark-red);
+    color: var(--kantspark-white);
+}
+
+.header-bottom__link-catalog {
+    background: var(--kantspark-red);
+    color: var(--kantspark-white);
+}
+
+.header-bottom__link-catalog img {
+    margin: 0 16px 0 0;
+}
+
 
