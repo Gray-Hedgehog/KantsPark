@@ -44,31 +44,43 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 36px;
+    padding: 10px 0 13px 0;
+    height: 12px;
+    
 }
 
 .header-top__left {
     display: flex;
     justify-content: space-between;
+    /* align-items: flex-start; */
     margin: 0 4px 0 0;
     width: 560px;
-    font-size: 12px;
-    font-weight: 400;
 }
 
 .header-top__left a {
     color: var(--kantspark-black);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header-top__left-location {
+    /* display: flex;
+    align-items: center; */
+}
+
+.header-top__left-location{
+    margin: 0 0 0 7px;
 }
 
 .header-top__left-location img {
-    align-items: center;
-    margin: 0 13px 0 0;
+    margin: 0 9px 0 0;
     transform: translateY(2px);
 }
 
 .header-top__left-informations {
     display: flex;
     align-items: center;
+    width: 365px;
 }
 .header-top__left-informations-shops {
     flex: 0 0 auto;
@@ -78,7 +90,7 @@ input {
 .header-top__left-informations-buyers {
     flex: 0 0 auto;
     position: relative;
-    margin: 0 44px 0 0; 
+    margin: 0 35px 0 0; 
 }
 
 .header-top__left-informations-buyers::after {
@@ -87,7 +99,7 @@ input {
     width: 8px;
     height: 4px;
     top: 50%;
-    right: -11px;
+    right: -19px;
     transform: translateY(-50%);
     background-color: var(--kantspark-black);
     -webkit-mask-image: url(../img/arrow.svg);
@@ -98,7 +110,7 @@ input {
 .header-top__left-informations-legal-entities {
     flex: 0 0 auto;
     position: relative;
-    margin: 0 24px 0 0; 
+    margin: 0 0 0 10px; 
 }
 
 .header-top__left-informations-legal-entities::after {
@@ -107,7 +119,7 @@ input {
     width: 8px;
     height: 4px;
     top: 50%;
-    right: -11px;
+    right: -19px;
     transform: translateY(-50%);
     background-color: var(--kantspark-black);
     -webkit-mask-image: url(../img/arrow.svg);
@@ -116,7 +128,7 @@ input {
 
 .header-top__right {
     flex: 0 0 auto;
-    margin: 0 16px 0 0;
+    margin: 0 18px 0 0;
 }
 .header-top__right a{
     font-size: 12px;
@@ -126,19 +138,19 @@ input {
 
 .header-middle {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     margin: 34px 0 0 0;
     height: 48px;
 }
 
 .header-middle__logo {
-    margin: 0 46px 0 0;
+    margin: 0 58px 0 0;
 }
 
 .header-middle form{
     display: flex;
-    margin: 0 56px 0 0;
+    /* margin: 0 50px 0 0; */
     width: 412px;
     height: 48px;
 }
@@ -174,11 +186,18 @@ input {
     align-items: center;
     height: 48px;
     padding: 13px 16px 15px 16px;
+    /* margin: 0 0 0 20px; */
     border-radius: 3px;
     font-weight: 600;
     font-size: 14px;
     color: var(--kantspark-black);
 }
+
+
+.header-middle__link-favorites {
+    margin: 0 0 0 48px;
+}
+
 
 .header-middle__link:hover {
     background: var(--kantspark-black-opacity-04);
@@ -218,7 +237,7 @@ input {
 
 .header-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     margin: 28px 0 0 0;
     height: 48px;
     border-radius: 6px;
@@ -230,7 +249,7 @@ input {
     flex: 0 0 auto;
     font-size: 14px;
     font-weight: 400;
-    padding: 16px 21px 16px 16px;
+    /* padding: 16px 21px 16px 16px; */
     line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
@@ -238,7 +257,7 @@ input {
 }
 
 .header-bottom__link img {
-    margin: 0 8px 0 0;
+    margin: 0 0px 0 0;
     transform: translateY(2px);
 }
 
@@ -249,6 +268,9 @@ input {
 }
 
 .header-bottom__link-catalog {  
+    margin:  0 0 0 3px; 
+    padding: 16px 21px 16px 16px;
+
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
@@ -259,13 +281,53 @@ input {
     color: var(--kantspark-white);
 }
 
-.header-bottom__link-catalog {
-    background: var(--kantspark-red);
-    color: var(--kantspark-white);
-}
 
 .header-bottom__link-catalog img {
-    margin: 0 16px 0 0;
+    margin: 0 10px 0 0;
 }
 
 
+.header-bottom__link-paper-products {
+    padding: 14px 18px 16px 23px;
+}
+
+.header-bottom__link-paper-products img {
+    margin: 0 5px 0 0;
+}
+
+.header-bottom__link-goods-for-school {
+    padding: 14px 17px 16px 17px;
+}
+
+.header-bottom__link-goods-for-school img {
+    margin: 0 4px 0 0;
+}
+
+.header-bottom__link-goods-for-creativity {
+    padding: 14px 16px 16px 16px;
+}
+
+.header-bottom__link-goods-for-creativity img {
+    margin: 0 4px 0 0;
+}
+
+.header-bottom__link-goods-for-trade {
+    padding: 14px 13px 16px 17px;
+}
+
+.header-bottom__link-goods-for-trade img {
+    margin: 0 4px 0 0;
+}
+
+.header-bottom__link-discounts {
+    padding: 14px 21px 16px 17px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--kantspark-red);
+}
+
+.header-bottom__link-discounts img {
+    margin: 0 4px 0 0;
+}
